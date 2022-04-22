@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
       ])
   )).filter(v => v[1]).map(v => v[0] + '@c.us')
   let response = await conn.groupAdd(m.chat, users)
-  if (response[users] == 408) throw `The number has been out recently\nCan only enter via ${usedPrefix}link`
+  if (response[users] == 408) throw `bu nomrə bu yaxınlarda Qrupdan çıxdığı uçu əlavə etmek olmadı yada qrupa qatılma ozelliyi bağlıdır ! ${usedPrefix}link`
   let pp = await conn.getProfilePicture(m.chat).catch(_ => false)
   let jpegThumbnail = pp ? await (await fetch(pp)).buffer() : false
   for (let user of response.participants.filter(user => Object.values(user)[0].code == 403)) {

@@ -13,7 +13,7 @@ let handler = async (m, { conn, text }) => {
     })
 
 }
-handler.help = ['addprem [@user]']
+handler.help = ['premiumver [@user]']
 handler.tags = ['owner']
 handler.command = /^(add|plus|\+)prem$/i
 

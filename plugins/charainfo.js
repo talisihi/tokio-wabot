@@ -5,10 +5,10 @@ let handler = async(m, { conn, text }) => {
   if (!res.ok) throw await res.text()
   let json = await res.json()
   let { name, alternative_names, url, image_url, type } = json.results[0]
-let charaingfo = `🧧 *Name:* ${name}
-🏮 *Nickname:* ${alternative_names}
+let charaingfo = `✏ *Adı:* ${name}
+👤 *Ləqəb:* ${alternative_names}
 🔗 *Link*: ${url}
-🧩 *Character Type*: ${type}`
+🗯 *Xarakter*: ${type}`
 
   conn.sendFile(m.chat, image_url, '', charaingfo, m)
 }

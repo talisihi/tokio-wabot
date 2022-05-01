@@ -22,16 +22,16 @@
     "whatsapp",
     "js-whatsapp"
   ],
-  "homepage": "https://github.com/Nurutomo/wabot-aq",
+  "homepage": "https://github.com/talisihi/tokio-wabot",
   "author": {
-    "name": "Nurutomo"
+    "name": "talisihi"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nurutomo/wabot-aq.git"
+    "url": "git+https://github.com/talisihi/tokio-wabot"
   },
   "bugs": {
-    "url": "https://github.com/Nurutomo/wabot-aq/issues"
+    "url": "https://github.com/talisihi/tokio-wabot"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {

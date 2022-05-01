@@ -2,7 +2,7 @@ let handler = m => m
 
 handler.before = function (m) {
   let user = global.db.data.users[m.sender]
-        let role = (user.level <= 10) ? 'Beginner'
+        let role = (user.level <= 10) ? 'Maladoy'
           : ((user.level >= 10) && (user.level <= 20)) ? 'Normal'
           : ((user.level >= 20) && (user.level <= 30)) ? 'Qeşey'
           : ((user.level >= 30) && (user.level <= 40)) ? 'Babat'

@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-👽 Owner is rich, he doesn't need your money.
+😐 Sahibi varlıdır, onun pulunuza ehtiyacı yoxdur.
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['donate']
 handler.tags = ['info']

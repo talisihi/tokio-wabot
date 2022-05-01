@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text }) => {
-    if (!text) throw 'Enter the message you are looking for!'
+    if (!text) throw 'Axtardığınız mesaji daxil edin !'
     let split = text.split`|`
     let result = await conn.searchMessages(split[0], m.chat, split[1], 1)
     if (result.messages.length > 0) {

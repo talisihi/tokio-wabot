@@ -1,8 +1,8 @@
 let handler = async m => m.reply(`
-☕ *Tokio :* a whatsapp bot\n\n🔗 *URL :* https://github.com/itsajaygaur/tokio-wabot
+☕ *Bot :* Komek Qrupu \n\n🔗 *URL :*https://chat.whatsapp.com/DmQeV6aFsCi7cTiEF1E948
 `.trim()) // repository
-handler.help = ['tokio']
+handler.help = ['Komek Qrup']
 handler.tags = ['info']
-handler.command = /^tokio|repo$/i
+handler.command = /^Komek|repo$/i
 
 module.exports = handler

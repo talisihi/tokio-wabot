@@ -17,7 +17,7 @@ During ${clockString(new Date - user.afk)}
     if (!afkTime || afkTime < 0) continue
     let reason = user.afkReason || ''
     m.reply(`
-Don't tag him!
+Onu tağ etmiyin!
 He is AFK ${reason ? 'with reason ' + reason : 'no reason'}
 During ${clockString(new Date - afkTime)}
 `.trim())

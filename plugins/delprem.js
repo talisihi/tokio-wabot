@@ -3,11 +3,11 @@ let handler = async (m, { conn, text }) => {
     let who
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
     else who = m.chat
-    if (!who) throw `tag the person!`
+    if (!who) throw `Tag elə Qaqam!`
     if (!global.prems.includes(who.split`@`[0])) throw 'he is not premium!'
     let index = global.prems.findIndex(v => (v.replace(/[^0-9]/g, '') + '@s.whatsapp.net') === (who.replace(/[^0-9]/g, '') + '@s.whatsapp.net'))
     global.prems.splice(index, 1)
-    conn.reply(m.chat, `@${who.split('@')[0]} now not premium!`, m, {
+    conn.reply(m.chat, `@${who.split('@')[0]} artığ premium deyil!`, m, {
         contextInfo: {
             mentionedJid: [who]
         }

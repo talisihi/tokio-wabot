@@ -34,24 +34,24 @@ let tags = {
 const defaultMenu = {
   before: `
 
-🙏🏻 Namaste %name, how can i help you?
+🙏🏻 Salam %name Aleykum sizə nece komek ede bilerem ?
 
 🪵 Left: *%limit Limit*
 🎗️ Role: *%role*
-🛕 Level: *%level* 
+⬆️ Level: *%level* 
 ☕ Total XP: *%totalexp*
 
 〽️ Prefix: *%p*
 📅 vaxt: *%week, %date*
-💠 Github: github.com/itsajaygaur/tokio-wabot
+💠 kömək Qrupu : https://chat.whatsapp.com/DmQeV6aFsCi7cTiEF1E948
 
-👇🏻 All usable commands are listed below 
+👇🏻 *Əmirlərdən istifadə edebilersiz*
 
 %readmore`.trimStart(),
   header: '        *━━❰･%category･❱━━*',
-  body: ' 🌠 %cmd %islimit %isPremium',
+  body: ' 🔵 %cmd %islimit %isPremium',
   footer: ' ',
-  after: `🌟 *Hope you're enjoying bot, have a great day* 
+  after: `🌟 *Ümüd edirəm Botdan razısız * 
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -150,7 +150,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.send2ButtonImg(m.chat, thumb, `🏮 I\'m ${conn.user.name}`, text.trim(), 'owner', `${_p}owner`, 'rules', `${_p}rules`, m)
+    conn.send2ButtonImg(m.chat, thumb, `⭕ I\'m ${conn.user.name}`, text.trim(), 'owner', `${_p}owner`, 'rules', `${_p}rules`, m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry, the menu is in error', m)
     throw e

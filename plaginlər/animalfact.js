@@ -3,19 +3,19 @@ let fetch = require("node-fetch");
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text)
     throw `
-*${usedPrefix}${command} <name animal>*
-example:
-*${usedPrefix}${command} <dog>*\n
+*${usedPrefix}${command} <heyvan adı>*
+Meselen:
+*${usedPrefix}${command} <pişik>*\n
 ┌〔 Options 〕
-├ dog
-├ cat
+├ it
+├ pişik
 ├ panda
-├ fox
-├ red_panda
+├ tülkü
+├ panda2
 ├ koala
-├ birb
-├ raccoon
-├ kangaroo
+├ quş
+├ yenot
+├ kenqru
 └────
 `.trim();
   let res = await fetch(

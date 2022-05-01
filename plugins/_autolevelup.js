@@ -9,9 +9,9 @@ handler.before = m => {
         
 	if (before !== user.level) {
             m.reply(`
-Congratulations, you have leveled up!
-*${before}* -> *${user.level}*
-type *.profile* to check
+Təbriklər,Səviyyə aldınız !
+*${before}* -> *${user.səviyyə}*
+Yoxlamağ uçun *.profile* Yazın
 	`.trim())
         }
 }

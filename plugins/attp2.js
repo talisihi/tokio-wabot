@@ -14,11 +14,11 @@ let handler = async (m, { conn, text }) => {
       quoted: m
     })
   } catch (e) {
-    m.reply('Conversion Failed')
+    m.reply('dönüşüm uğursuz oldu')
     throw false
   }
 }
-handler.help = ['attp2 <teks>']
+handler.help = ['attp2 <söz>']
 handler.tags = ['sticker']
 handler.command = /^(attp2)$/i
 handler.limit = true

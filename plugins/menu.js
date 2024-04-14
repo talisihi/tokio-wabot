@@ -37,9 +37,9 @@ const defaultMenu = {
 🙏🏻 Salam %name Aleykum sizə nece komek ede bilerem ?
 
 🪵 Left: *%limit Limit*
-🎗️ Role: *%role*
+🫂 Role: *%role*
 ⬆️ Level: *%level* 
-☕ Total XP: *%totalexp*
+♠️ Total XP: *%totalexp*
 
 〽️ Prefix: *%p*
 📅 vaxt: *%week, %date*
